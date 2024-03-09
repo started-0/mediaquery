@@ -22,55 +22,6 @@
         .card {
             background-color: aqua;
         }
-
-        #static {
-            display: block;
-            width: 200px;
-            height: 200px;
-            background-color: red;
-            border: 8px solid white;
-            border-radius: 50%;
-            position: static;
-        }
-
-        .relative {
-            display: block;
-            width: 200px;
-            height: 200px;
-            background-color: gold;
-            border: 8px solid white;
-            position: relative;
-            left: 200px;
-            top: 70px;
-        }
-
-        .absolute {
-            display: block;
-            width: 200px;
-            height: 200px;
-            background-color: blueviolet;
-            border: 8px solid white;
-            position: absolute;
-            left: 200px;
-            top: 70px;
-        }
-
-        .fixed {
-            display: block;
-            width: 100px;
-            height: 100px;
-            background-color: hotpink;
-            border: 15px solid white;
-            position: fixed;
-            left: 650px;
-            top: 200px;
-        }
-
-        div {
-            text-align: center;
-            font-size: 15px;
-            font-style: italic;
-        }
     </style>
 </head>
 <body>
@@ -78,35 +29,12 @@
     <div class="first-card">
     </div>
     <div class="card">
-        <div id="static">
-            STATIC
-        </div>
     </div>
     <div class="card">
-        <pre>
-            Due to pre tag the relative positioned box get 
-            downed even more as it is instructed in style 
-        </pre>
-        <div class="relative">
-            RELATIVE
-        </div>
     </div>
-    <div class="card" style="position: relative;">
-        <pre>
-            Due to pre tag the relative positioned Box get 
-            downed even more as it is instructed in style
-            But 
-            using Positioned absolute it remained to its instructed position
-            also used relative to parent i.e. class=card
-        </pre>
-        <div class="absolute">
-            ABSOLUTE
-        </div>
+    <div class="card" >
     </div>
     <div class="card">
-        <div class="fixed">
-            FIXED
-        </div>
     </div>
 </div>
 </body>
